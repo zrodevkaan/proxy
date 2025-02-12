@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing Suspicious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+            display: none;
+            margin-top: 20px;
+        }
+        .hidden-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nothing Suspicious Going On Here</h1>
+        <p>Just a normal, totally innocent webpage. No secrets. No mystery. Move along.</p>
+        <button class="hidden-button" onclick="revealSecret()">You Found Me</button>
+        <p class="warning" id="secretMessage">Uh oh... you weren’t supposed to see this. <br> 😳</p>
+    </div>
+
+    <script>
+        function revealSecret() {
+            document.getElementById('secretMessage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
